@@ -1,8 +1,8 @@
 def greet():
     print("-------------------")
-    print("  Приветсвуем вас  ")
+    print("  Приветсвуем тебя ")
     print("      в игре       ")
-    print("  крестики-нолики  ")
+    print("  Крестики-Нолики  ")
     print("-------------------")
     print(" формат ввода: x y ")
     print(" x - номер строки  ")
@@ -22,16 +22,16 @@ def show():
 
 def ask():
     while True:
-        cords = input("         Ваш ход: ").split()
+        cords = input("         Твой ход: ").split()
 
         if len(cords) != 2:
-            print(" Введите 2 координаты! ")
+            print(" Введи 2 координаты! ")
             continue
 
         x, y = cords
 
         if not (x.isdigit()) or not (y.isdigit()):
-            print(" Введите числа! ")
+            print(" Введи числа! ")
             continue
 
         x, y = int(x), int(y)
